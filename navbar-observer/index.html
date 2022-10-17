@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>navbar effect</title>
+</head>
+<body>
+    <header>
+        
+            <nav class="nav">
+                <ul>
+                    <li><a data-page="home"  href="#">Home</a></li>
+                    <li><a data-page="about" href="#">About</a></li>
+                    <li><a data-page="contact" href="#">Contact</a></li>
+                    <li><a data-page="wiki" href="#">Wiki</a></li>
+                    <div class="show"></div>
+                </ul>
+            </nav>
+            
+       
+    </header>
+    <div class="sidebar">
+        <ul class="nav2">
+            <li><a data-page="explore"  href="#">Explore</a></li>
+                <li><a data-page="shorts" href="#">Shorts</a></li>
+                <li><a data-page="library" href="#">Library</a></li>
+                <li><a data-page="youtube" href="#">Youtube</a></li>
+                <div class="show2"></div>
+        </ul>
+    </div>
+    <main>
+
+        <section data-index="0" class="home" id="explore" data-title="explore">
+            <img src="img/1.jpg">
+        </section>
+        <section data-index="1" class="about" id="shorts">
+            <img src="img/2.jpg">
+        </section>
+        <section data-index="2" class="contact" id="library">
+            <img src="img/3.jpg">
+        </section>
+        <section data-index="3" class="wiki" id="youtube">
+            <img src="img/4.jpg">
+        </section>
+    </main>
+
+    <script src="./main2.js"></script>
+</body>
+</html>
