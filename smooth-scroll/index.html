@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SmoothScroll JS & NavBar Effect</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a data-page="section1" href="#s1">Home</a></li>
+            <li><a data-page="section2" href="#s2">About</a></li>
+            <li><a data-page="section3" href="#s3">Contact</a></li>
+            <li><a data-page="section4" href="#s4">Info</a></li>
+            <div class="show"></div>
+        </ul>
+    </nav>
+    <main>
+        <section id="s1" class="section1" data-index="0">
+            <h1>Section 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora rerum laborum, dolorum totam incidunt reprehenderit </p>
+        </section>
+        <section id="s2" class="section2" data-index="1">
+            <h1>Section 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora rerum laborum, dolorum totam incidunt reprehenderit </p>
+        </section>
+        <section id="s3" class="section3" data-index="2"><h1>Section 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora rerum laborum, dolorum totam incidunt reprehenderit </p></section>
+        <section id="s4" class="section4" data-index="3"><h1>Section 4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora rerum laborum, dolorum totam incidunt reprehenderit </p></section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="./main.js">
+
+    </script>
+</body>
+</html>
