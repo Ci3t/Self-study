@@ -4,6 +4,33 @@ const scroll = new SmoothScroll('nav a[href*="#"]',{
     speed:700,
 });
 
+//!mouse Change
+const mouseCursor = document.querySelector('.cursor')
+const navLink = document.querySelectorAll('nav ul li a')
+console.log(navLink);
+
+
+window.addEventListener('mousemove',cursor)
+
+function cursor(e) {
+    
+    mouseCursor.style.top = `${e.pageY}px`
+    mouseCursor.style.left =` ${e.pageX}px`
+}
+
+navLink.forEach(function(link){
+    link.addEventListener('mouseover',function(){
+        mouseCursor.classList.add('link-grow')
+        link.classList.add('hovered-link')
+        link.style.transform = `scale(${3})`
+    })
+    link.addEventListener('mouseout',function(){
+        mouseCursor.classList.remove('link-grow')
+        link.classList.remove('hovered-link')
+    })
+})
+console.log(navLink);
+//? observer functions
 const section = document.querySelectorAll('section');
 const nav = document.querySelector('a')
 const show = document.querySelector('.show')
